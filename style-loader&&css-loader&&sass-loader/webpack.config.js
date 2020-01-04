@@ -17,10 +17,10 @@ module.exports = {
         rules: [
             {
                 test: /\.(c|sc|sa)ss$/,
-                loader: [
-                    'style-loader',
-                    'css-loader',
-                    'sass-loader'
+                use: [
+                    { loader: 'style-loader' },
+                    { loader: 'css-loader' },
+                    { loader: 'sass-loader' }
                 ]
             }
         ]
